@@ -1,0 +1,167 @@
+ *{
+   margin:0px;
+   padding: 0px;
+   box-sizing: border-box;
+ }
+
+ #up {
+height: 15vh;
+background-color: red;
+ }
+.d{
+  color: white;
+}
+ .logo{
+  font-family: 'Alfa Slab One', cursive;
+  justify-content: center;
+  color: white;
+
+ }
+.hi{
+  font-size: 50px;
+}
+@media screen and (max-width:700px){
+  .hi{
+    font-size: 15px;
+  }
+  .d{
+    size:2px;
+  }
+
+}
+
+nav{
+display: flex;
+justify-content: space-around;
+align-items: center;
+min=height: 8vh;
+font-family: 'Open Sans', sans-serif;
+}
+.navlinks{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.navlinks li{
+  list-style: none;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navlinks a{
+  color: black;
+  letter-spacing: normal;
+}
+.burger{
+  display: none;
+  cursor: pointer;
+}
+.burger div{
+width:25px;
+height: 2px;
+background-color: black;
+margin: 5px;
+}
+@media screen and (max-width:700px){
+body{
+ overflow-x: hidden;
+
+}
+  .navlinks{
+    position: absolute;
+    right: 0px;
+    height: 25vh;
+    top: 8vh;
+    background-color: white;
+    display: flex;
+    flex-direction:column;
+    align-content: center;
+   width: 25%;
+   transform: translateX(100%);
+   transition: transform 0.4s ease-in;
+  }
+  .navlinks a{
+    color: red;
+  }
+  .navlinks li{
+    opacity:0;
+  }
+
+.burger{
+  display:block;
+}
+
+
+}
+
+.nav-active{
+   transform: translateX(0%);
+}
+
+@@keyframes navlinksFade {
+
+  from{
+    opacity: 0;
+    transform: translate(30px);
+  }
+  to{
+    opacity: 1;
+    transform: translate(0px);
+  }
+
+}
+
+.btn0{
+  color:white;
+
+}
+
+
+.btn1{
+  background-color: white;
+  color:red;
+
+}
+.btn1-active{
+  background-color: white;
+}
+.flow{
+  float: right;
+}
+.my-container{
+margin: auto;
+height: 1162px;
+}
+.my-row{
+
+}
+.my-col{
+ height: auto;
+  border: 3px;
+}
+.l{
+  align-self: flex-start;
+}
+.m{
+  align-content: center;
+}
+.rowly{
+height: 300px;
+}
+.last{
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width:700px){
+  .wrapper{
+    height: auto;
+    padding: inherit;
+  }
+  .footer{
+    display: table-row;
+    height: 1px;
+
+  }
+
+}
